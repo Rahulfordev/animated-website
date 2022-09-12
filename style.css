@@ -1,0 +1,318 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body,
+html {
+    height: 90%;
+}
+
+html {
+    font-size: 80%;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 1.875rem;
+}
+
+p {
+    line-height: 1.6875rem;
+    margin-bottom: 1.875rem;
+    color: rgba(25, 25, 25, .6);
+}
+
+.btn {
+    border-radius: 6.25rem;
+    border-width: .125rem;
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
+    font-weight: 600;
+    font-size: .9375rem;
+    padding: .5rem 1.25rem;
+    position: relative;
+    outline: none !important;
+}
+
+.btn-primary:hover {
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .3);
+}
+
+.btn-primary {
+    background-color: #00c9ee;
+    border-color: #00c9ee;
+    color: #fff;
+}
+
+.ts-count-down {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: .375rem .3125rem 1.5625rem rgba(0, 0, 0, .5);
+}
+
+.ts-count-down div {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.ts-count-down div:last-child .ts-cc-number:after {
+    display: none;
+}
+
+.ts-count-down div .ts-cc-number {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.ts-count-down div .ts-cc-number:after {
+    bottom: 0;
+    content: "\f111";
+    font-weight: 900;
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    height: .625rem;
+    margin: auto;
+    font-size: .625rem;
+    top: 0;
+    opacity: .2;
+    right: -0.625rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.ts-count-down .ts-cc-description {
+    display: block;
+    font-size: .875rem;
+    opacity: .5;
+}
+
+#footer {
+    vertical-align: bottom;
+}
+
+.ts-social-icons {
+    font-size: 120%;
+}
+
+.ts-social-icons a {
+    text-decoration: none;
+    padding: .25rem .5rem;
+    color: #9e9e9e;
+}
+
+small {
+    color: #727272;
+    float: right;
+}
+
+body.ts-theme-light .ts-shapes-canvas:after {
+    opacity: .1;
+}
+
+body.ts-theme-light p {
+    color: rgba(25, 25, 25, .6);
+}
+
+body.ts-theme-light h2 {
+    border-bottom-color: rgba(25, 25, 25, .1);
+}
+
+body.ts-theme-light .ts-social-icons a {
+    color: #191919;
+    opacity: .6;
+}
+
+body.ts-theme-light .ts-social-icons a:hover {
+    opacity: 1;
+}
+
+.ts-page-wrapper {
+    height: 100%;
+    transition: 1s cubic-bezier(.77, 0, .18, 1);
+}
+
+.ts-page-wrapper>.container {
+    display: table;
+    height: 100%;
+}
+
+#header {
+    display: table-row;
+    height: .0625rem;
+}
+
+#header {
+    vertical-align: top;
+}
+
+#header .navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    font-size: .875rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    transition: .3s ease;
+}
+
+#main-content {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#main-content .ts-content-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#main-content .ts-content-wrapper>.row {
+    width: 100%;
+}
+
+.ts-background {
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+}
+
+.ts-background .ts-background {
+    height: 100%;
+    width: 100%;
+}
+
+.ts-background-image,
+.ts-img-into-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ts-background-image img,
+.ts-img-into-bg img {
+    display: none;
+}
+
+.ts-shapes-canvas:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: .5;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0)', endColorstr='#000000', GradientType=1);
+}
+
+.ts-animate {
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes ts-scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ts-scale {
+    animation-name: ts-scale;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ts-bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(2.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.ts-bounce {
+    animation-name: ts-bounce;
+    animation-timing-function: ease-in-out;
+}
+
+@media (min-width: 75rem) {
+    html {
+        font-size: 100%;
+    }
+    h1 {
+        font-size: 2.625rem;
+    }
+    .ts-count-down {
+        font-size: 4.375rem;
+    }
+}
+
+body.has-loading-screen:before {
+    background-color: #000;
+    content: "";
+    height: 100%;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition: 1.5s ease;
+    opacity: 1;
+}
+
+body.has-loading-screen:after {
+    content: url("../../assets/img/loading.svg");
+    height: 2.5rem;
+    width: 2.5rem;
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transform: scale(1);
+    transition: 1.5s ease;
+    top: 0;
+    z-index: 10000;
+}
+
+body.has-loading-screen.loading-done:before {
+    width: 0;
+}
+
+body.has-loading-screen.loading-done:after {
+    transform: scale(0);
+    opacity: 0;
+}
